@@ -7,7 +7,12 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header></header>
+    <header class="page_header">
+      <nav class="page_header__menu">
+        <a class="page_header__menu__link">Home</a>
+        <a class="page_header__menu__link">About Me</a>
+      </nav>
+    </header>
     <main class="presentation">
       <section class="presentation__content">
         <h1 class="presentation__content__title">
@@ -18,20 +23,31 @@
           Hi! I'm Yuri. I'm learning Front-end.
         </p>
         <div class="presentation__content_links">
+          <h2 class="presentation__content_links_subtitle">My links</h2>
           <a
             class="presentation__content_links_bt"
             href="https://www.linkedin.com/in/yuricatramby/"
-            >Linkedin</a
+          >
+            <img src="./assets/linkedin.png" alt="Icon Linkedin" />
+            Linkedin</a
           >
           <a
             class="presentation__content_links_bt"
             href="https://github.com/YuriCatramby"
-            >Github</a
+          >
+            <img src="./assets/github.png" alt="Icon Github" />
+            Github</a
           >
         </div>
       </section>
-      <img class="presentation__img" src="HTML5_logo.png" alt="Logo HTML5" />
+      <img
+        class="presentation__img"
+        src="./assets/HTML5_logo.png"
+        alt="Logo HTML5"
+      />
     </main>
-    <footer></footer>
+    <footer class="page_footer">
+      <p>Developed by Yuri</p>
+    </footer>
   </body>
 </html>
