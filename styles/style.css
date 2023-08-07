@@ -1,26 +1,44 @@
 @import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap");
 
+:root {
+  --first-color: #000000;
+  --second-color: #f6f6f6;
+  --third-color: #22d4fd;
+  --fourth-color: #272727;
+  --first-font: "Krona One", sans-serif;
+  --second-font: "Montserrat", sans-seri;
+}
+
 * {
   margin: 0;
   padding: 0;
 }
 
 body {
-  /* height: 100vh; */
   box-sizing: border-box;
-  background-color: #000000;
-  color: #f6f6f6;
+  background-color: var(--first-color);
+  color: var(--second-color);
+}
+
+.page_header {
+  padding: 2% 0% 0% 15%;
+}
+
+.page_header__menu {
+  display: flex;
+  gap: 80px;
 }
 
 .page_header__menu__link {
-  font-family: "Montserrat", sans-seri;
+  font-family: var(--second-font);
   font-size: 24px;
   font-weight: 600px;
-  color: #22d4fd;
+  color: var(--third-color);
+  text-decoration: none;
 }
 
 .presentation {
-  margin: 11% 15%;
+  margin: 10% 15%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -28,16 +46,16 @@ body {
 
 .presentation__content__title {
   font-size: 36px;
-  font-family: "Krona One", sans-serif;
+  font-family: var(--first-font);
 }
 
 .title-highlight {
-  color: #22d4fd;
+  color: var(--third-color);
 }
 
 .presentation__content__text {
   font-size: 24px;
-  font-family: "Montserrat", sans-seri;
+  font-family: var(--second-font);
 }
 .presentation__content {
   width: 615px;
@@ -47,7 +65,7 @@ body {
 }
 
 .presentation__img {
-  width: 400px; /* Altere o valor para o tamanho desejado */
+  width: 400px;
 }
 
 .presentation__content_links {
@@ -59,38 +77,40 @@ body {
 }
 
 .presentation__content_links_subtitle {
-  font-family: "Krona One", sans-serif;
+  font-family: var(--first-font);
   font-weight: 400px;
   font-size: 24px;
 }
 
 .presentation__content_links_bt {
-  /* background-color: #22d4fd; */
   display: flex;
   justify-content: center;
   gap: 16px;
   width: 378px;
   text-align: center;
   border-radius: 8px;
-  border: 2px solid #22d4fd;
+  border: 2px solid var(--third-color);
   font-size: 24px;
   padding: 21.5px 0;
   text-decoration: none;
-  color: #f6f6f6;
-  font-family: "Montserrat", sans-seri;
+  color: var(--second-color);
+  font-family: var(--second-font);
   font-weight: 600px;
 }
 
 .presentation__content_links_bt:hover {
-  background-color: #272727;
+  background-color: var(--fourth-color);
 }
 
 .page_footer {
-  padding: 24px;
-  color: #000000;
-  background-color: #22d4fd;
+  padding: 2%;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: var(--first-color);
+  background-color: var(--third-color);
   text-align: center;
-  font-family: "Montserrat", sans-seri;
+  font-family: var(--second-font);
   font-size: 24px;
   font-weight: 400px;
 }
