@@ -31,7 +31,7 @@ body {
 
 .page_header__menu__link {
   font-family: var(--second-font);
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 600px;
   color: var(--third-color);
   text-decoration: none;
@@ -42,10 +42,18 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 82px;
+}
+
+.presentation__content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 
 .presentation__content__title {
-  font-size: 36px;
+  font-size: 2.25rem;
   font-family: var(--first-font);
 }
 
@@ -54,18 +62,8 @@ body {
 }
 
 .presentation__content__text {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-family: var(--second-font);
-}
-.presentation__content {
-  width: 615px;
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-}
-
-.presentation__img {
-  width: 400px;
 }
 
 .presentation__content_links {
@@ -79,18 +77,18 @@ body {
 .presentation__content_links_subtitle {
   font-family: var(--first-font);
   font-weight: 400px;
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 .presentation__content_links_bt {
   display: flex;
   justify-content: center;
   gap: 16px;
-  width: 378px;
+  width: 50%;
   text-align: center;
   border-radius: 8px;
   border: 2px solid var(--third-color);
-  font-size: 24px;
+  font-size: 1.5rem;
   padding: 21.5px 0;
   text-decoration: none;
   color: var(--second-color);
@@ -102,15 +100,46 @@ body {
   background-color: var(--fourth-color);
 }
 
+.presentation__img {
+  width: 40%;
+}
+
 .page_footer {
-  padding: 2%;
-  position: absolute;
-  bottom: 0;
+  padding: 0.5%;
   width: 100%;
   color: var(--first-color);
   background-color: var(--third-color);
   text-align: center;
   font-family: var(--second-font);
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 400px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1;
+}
+
+@media (max-width: 1000px) {
+  .page_header {
+    padding: 10% 0% 0% 0%;
+  }
+
+  .page_header__menu {
+    justify-content: center;
+  }
+
+  .presentation {
+    flex-direction: column-reverse;
+    padding: 5%;
+  }
+
+  .presentation__content {
+    width: auto;
+  }
 }
